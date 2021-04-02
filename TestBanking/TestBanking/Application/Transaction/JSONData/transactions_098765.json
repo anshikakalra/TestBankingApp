@@ -1,0 +1,24 @@
+{
+  "transactions": [
+    {
+      "date": "2021-03-11T07:42:18Z",
+      "description": "Bed, Bath & Table-Hold for POS debits",
+      "amount": "-10.70",
+      "processingStatus": "PENDING"
+    },
+    {
+      "date": "2021-03-11T06:42:18Z",
+      "description": "V7110 Hotel Clarendon Surry Hills Ref: 205944",
+      "amount": "-27.70",
+      "runningBalance": "8500.00",
+      "processingStatus": "POSTED"
+    },
+    {
+      "date": "2021-03-09T06:42:18Z",
+      "description": "Salary",
+      "amount": "6.91",
+      "runningBalance": "1270.54",
+      "processingStatus": "POSTED"
+    }
+  ]
+}

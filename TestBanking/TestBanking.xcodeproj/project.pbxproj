@@ -22,6 +22,11 @@
 		FE3E33482616F46600471C21 /* TestAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33472616F46600471C21 /* TestAccountViewModel.swift */; };
 		FE3E334E2616F60B00471C21 /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = FE3E334D2616F60B00471C21 /* accounts.json */; };
 		FE3E335E2616FE9F00471C21 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E335D2616FE9F00471C21 /* AccountTableViewCell.swift */; };
+		FE3E336B26170E3000471C21 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E336A26170E3000471C21 /* Transaction.swift */; };
+		FE3E337726170E7D00471C21 /* transactions_098765.json in Resources */ = {isa = PBXBuildFile; fileRef = FE3E337626170E7D00471C21 /* transactions_098765.json */; };
+		FE3E337C2617103200471C21 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E337B2617103200471C21 /* TransactionViewModel.swift */; };
+		FE3E33842617132000471C21 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33832617131F00471C21 /* TransactionTableViewCell.swift */; };
+		FE3E3389261714B000471C21 /* TransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E3388261714B000471C21 /* TransactionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		FE3E33472616F46600471C21 /* TestAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccountViewModel.swift; sourceTree = "<group>"; };
 		FE3E334D2616F60B00471C21 /* accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accounts.json; sourceTree = "<group>"; };
 		FE3E335D2616FE9F00471C21 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		FE3E336A26170E3000471C21 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		FE3E337626170E7D00471C21 /* transactions_098765.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transactions_098765.json; sourceTree = "<group>"; };
+		FE3E337B2617103200471C21 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		FE3E33832617131F00471C21 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransactionTableViewCell.swift; path = TestBanking/Application/Transaction/View/TransactionTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		FE3E3388261714B000471C21 /* TransactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +153,7 @@
 		FE3E33232616DD6500471C21 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				FE3E336826170E0300471C21 /* Transaction */,
 				FE3E33372616E05C00471C21 /* Account */,
 				FE3E32FB2616DC8700471C21 /* LaunchScreen.storyboard */,
 				FE3E32F62616DC5B00471C21 /* Main.storyboard */,
@@ -203,6 +214,58 @@
 				FE3E335D2616FE9F00471C21 /* AccountTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FE3E336826170E0300471C21 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E337526170E5300471C21 /* JSONData */,
+				FE3E337426170E4B00471C21 /* View */,
+				FE3E337326170E4100471C21 /* ViewController */,
+				FE3E337226170E3900471C21 /* ViewModel */,
+				FE3E336926170E1800471C21 /* Model */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		FE3E336926170E1800471C21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E336A26170E3000471C21 /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE3E337226170E3900471C21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E337B2617103200471C21 /* TransactionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FE3E337326170E4100471C21 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E3388261714B000471C21 /* TransactionTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FE3E337426170E4B00471C21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E33832617131F00471C21 /* TransactionTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE3E337526170E5300471C21 /* JSONData */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E337626170E7D00471C21 /* transactions_098765.json */,
+			);
+			path = JSONData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3E337726170E7D00471C21 /* transactions_098765.json in Resources */,
 				FE3E32FD2616DC8700471C21 /* LaunchScreen.storyboard in Resources */,
 				FE3E334E2616F60B00471C21 /* accounts.json in Resources */,
 				FE3E32FA2616DC8700471C21 /* Assets.xcassets in Resources */,
@@ -338,9 +402,13 @@
 			files = (
 				FE3E333A2616E0E200471C21 /* Account.swift in Sources */,
 				FE3E32F52616DC5B00471C21 /* AccountsViewController.swift in Sources */,
+				FE3E337C2617103200471C21 /* TransactionViewModel.swift in Sources */,
+				FE3E336B26170E3000471C21 /* Transaction.swift in Sources */,
 				FE3E32F12616DC5B00471C21 /* AppDelegate.swift in Sources */,
 				FE3E32F32616DC5B00471C21 /* SceneDelegate.swift in Sources */,
+				FE3E33842617132000471C21 /* TransactionTableViewCell.swift in Sources */,
 				FE3E335E2616FE9F00471C21 /* AccountTableViewCell.swift in Sources */,
+				FE3E3389261714B000471C21 /* TransactionTableViewController.swift in Sources */,
 				FE3E33432616F3F700471C21 /* AccountViewModel.swift in Sources */,
 				FE3E33252616DD9100471C21 /* Constants.swift in Sources */,
 			);
