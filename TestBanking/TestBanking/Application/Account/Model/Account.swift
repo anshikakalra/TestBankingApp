@@ -23,6 +23,17 @@ enum ProductName: Decodable {
             self = .unKnown(value: productName ?? "unKnown")
         }
     }
+    
+    func description() -> String{
+        switch self {
+        case .saving:
+            return "Saving"
+        case .spending:
+            return "Spending"
+        default:
+            return "Unknown"
+        }
+    }
 }
 
 struct Accounts: Decodable {
@@ -33,5 +44,5 @@ struct Account:Decodable {
     let id: Int
     var currentBalance: Double
     var availableBalance: Double
-    var productName: ProductName
+    let productName: ProductName
 }

@@ -21,6 +21,7 @@ class AccountViewModel {
     init(accountDelegate: AccountDelegate) {
         self.accountDelegate = accountDelegate
         self.accounts = []
+        _ = loadAccounts()
     }
     
     //MARK: API calls
@@ -35,5 +36,15 @@ class AccountViewModel {
             }
         }
         return []
+    }
+    
+    func formatAccountData(forAccount account: Account) -> (id: String,
+                                                            type: String,
+                                                            currentBalance: String,
+                                                            availableBalance: String) {
+        return ("\(account.id)",
+                "\(account.productName.description())",
+                "\(account.currentBalance)",
+                "\(account.availableBalance)")
     }
 }

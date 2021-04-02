@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FE3E32F12616DC5B00471C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E32F02616DC5B00471C21 /* AppDelegate.swift */; };
 		FE3E32F32616DC5B00471C21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E32F22616DC5B00471C21 /* SceneDelegate.swift */; };
-		FE3E32F52616DC5B00471C21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E32F42616DC5B00471C21 /* ViewController.swift */; };
+		FE3E32F52616DC5B00471C21 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E32F42616DC5B00471C21 /* AccountsViewController.swift */; };
 		FE3E32F82616DC5B00471C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3E32F62616DC5B00471C21 /* Main.storyboard */; };
 		FE3E32FA2616DC8700471C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE3E32F92616DC8700471C21 /* Assets.xcassets */; };
 		FE3E32FD2616DC8700471C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3E32FB2616DC8700471C21 /* LaunchScreen.storyboard */; };
@@ -21,6 +21,7 @@
 		FE3E33432616F3F700471C21 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33422616F3F700471C21 /* AccountViewModel.swift */; };
 		FE3E33482616F46600471C21 /* TestAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33472616F46600471C21 /* TestAccountViewModel.swift */; };
 		FE3E334E2616F60B00471C21 /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = FE3E334D2616F60B00471C21 /* accounts.json */; };
+		FE3E335E2616FE9F00471C21 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E335D2616FE9F00471C21 /* AccountTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,7 @@
 		FE3E32ED2616DC5B00471C21 /* TestBanking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBanking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3E32F02616DC5B00471C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE3E32F22616DC5B00471C21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FE3E32F42616DC5B00471C21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE3E32F42616DC5B00471C21 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		FE3E32F72616DC5B00471C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE3E32F92616DC8700471C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE3E32FC2616DC8700471C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		FE3E33422616F3F700471C21 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		FE3E33472616F46600471C21 /* TestAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccountViewModel.swift; sourceTree = "<group>"; };
 		FE3E334D2616F60B00471C21 /* accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accounts.json; sourceTree = "<group>"; };
+		FE3E335D2616FE9F00471C21 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				FE3E33232616DD6500471C21 /* Application */,
-				FE3E32F42616DC5B00471C21 /* ViewController.swift */,
 				FE3E32F92616DC8700471C21 /* Assets.xcassets */,
 				FE3E32FE2616DC8700471C21 /* Info.plist */,
 			);
@@ -155,6 +156,8 @@
 		FE3E33372616E05C00471C21 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				FE3E335C2616FE8600471C21 /* View */,
+				FE3E33552616F8BB00471C21 /* ViewController */,
 				FE3E334C2616F5E800471C21 /* JSONData */,
 				FE3E33412616F3B400471C21 /* ViewModel */,
 				FE3E33382616E0C800471C21 /* Model */,
@@ -184,6 +187,22 @@
 				FE3E334D2616F60B00471C21 /* accounts.json */,
 			);
 			path = JSONData;
+			sourceTree = "<group>";
+		};
+		FE3E33552616F8BB00471C21 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E32F42616DC5B00471C21 /* AccountsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FE3E335C2616FE8600471C21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E335D2616FE9F00471C21 /* AccountTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,9 +337,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3E333A2616E0E200471C21 /* Account.swift in Sources */,
-				FE3E32F52616DC5B00471C21 /* ViewController.swift in Sources */,
+				FE3E32F52616DC5B00471C21 /* AccountsViewController.swift in Sources */,
 				FE3E32F12616DC5B00471C21 /* AppDelegate.swift in Sources */,
 				FE3E32F32616DC5B00471C21 /* SceneDelegate.swift in Sources */,
+				FE3E335E2616FE9F00471C21 /* AccountTableViewCell.swift in Sources */,
 				FE3E33432616F3F700471C21 /* AccountViewModel.swift in Sources */,
 				FE3E33252616DD9100471C21 /* Constants.swift in Sources */,
 			);
