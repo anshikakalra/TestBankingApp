@@ -16,6 +16,8 @@
 		FE3E33082616DC8900471C21 /* TestBankingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33072616DC8900471C21 /* TestBankingTests.swift */; };
 		FE3E33132616DC8900471C21 /* TestBankingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33122616DC8900471C21 /* TestBankingUITests.swift */; };
 		FE3E33252616DD9100471C21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33242616DD9100471C21 /* Constants.swift */; };
+		FE3E33302616DEAD00471C21 /* TestAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E332F2616DEAD00471C21 /* TestAccounts.swift */; };
+		FE3E333A2616E0E200471C21 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33392616E0E200471C21 /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		FE3E33122616DC8900471C21 /* TestBankingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBankingUITests.swift; sourceTree = "<group>"; };
 		FE3E33142616DC8900471C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE3E33242616DD9100471C21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FE3E332F2616DEAD00471C21 /* TestAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccounts.swift; sourceTree = "<group>"; };
+		FE3E33392616E0E200471C21 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 			children = (
 				FE3E33072616DC8900471C21 /* TestBankingTests.swift */,
 				FE3E33092616DC8900471C21 /* Info.plist */,
+				FE3E332F2616DEAD00471C21 /* TestAccounts.swift */,
 			);
 			path = TestBankingTests;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 		FE3E33232616DD6500471C21 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				FE3E33372616E05C00471C21 /* Account */,
 				FE3E32FB2616DC8700471C21 /* LaunchScreen.storyboard */,
 				FE3E32F62616DC5B00471C21 /* Main.storyboard */,
 				FE3E32F22616DC5B00471C21 /* SceneDelegate.swift */,
@@ -137,6 +143,22 @@
 				FE3E33242616DD9100471C21 /* Constants.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		FE3E33372616E05C00471C21 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E33382616E0C800471C21 /* Model */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		FE3E33382616E0C800471C21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E33392616E0E200471C21 /* Account.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3E333A2616E0E200471C21 /* Account.swift in Sources */,
 				FE3E32F52616DC5B00471C21 /* ViewController.swift in Sources */,
 				FE3E32F12616DC5B00471C21 /* AppDelegate.swift in Sources */,
 				FE3E32F32616DC5B00471C21 /* SceneDelegate.swift in Sources */,
@@ -281,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3E33082616DC8900471C21 /* TestBankingTests.swift in Sources */,
+				FE3E33302616DEAD00471C21 /* TestAccounts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
