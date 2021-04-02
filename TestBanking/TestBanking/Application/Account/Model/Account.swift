@@ -25,6 +25,10 @@ enum ProductName: Decodable {
     }
 }
 
+struct Accounts: Decodable {
+    let accounts: [Account]
+}
+
 struct Account:Decodable {
     let id: Int
     var currentBalance: Double

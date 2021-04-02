@@ -18,6 +18,9 @@
 		FE3E33252616DD9100471C21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33242616DD9100471C21 /* Constants.swift */; };
 		FE3E33302616DEAD00471C21 /* TestAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E332F2616DEAD00471C21 /* TestAccounts.swift */; };
 		FE3E333A2616E0E200471C21 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33392616E0E200471C21 /* Account.swift */; };
+		FE3E33432616F3F700471C21 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33422616F3F700471C21 /* AccountViewModel.swift */; };
+		FE3E33482616F46600471C21 /* TestAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33472616F46600471C21 /* TestAccountViewModel.swift */; };
+		FE3E334E2616F60B00471C21 /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = FE3E334D2616F60B00471C21 /* accounts.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		FE3E33242616DD9100471C21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FE3E332F2616DEAD00471C21 /* TestAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccounts.swift; sourceTree = "<group>"; };
 		FE3E33392616E0E200471C21 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		FE3E33422616F3F700471C21 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		FE3E33472616F46600471C21 /* TestAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccountViewModel.swift; sourceTree = "<group>"; };
+		FE3E334D2616F60B00471C21 /* accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accounts.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 				FE3E33072616DC8900471C21 /* TestBankingTests.swift */,
 				FE3E33092616DC8900471C21 /* Info.plist */,
 				FE3E332F2616DEAD00471C21 /* TestAccounts.swift */,
+				FE3E33472616F46600471C21 /* TestAccountViewModel.swift */,
 			);
 			path = TestBankingTests;
 			sourceTree = "<group>";
@@ -148,6 +155,8 @@
 		FE3E33372616E05C00471C21 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				FE3E334C2616F5E800471C21 /* JSONData */,
+				FE3E33412616F3B400471C21 /* ViewModel */,
 				FE3E33382616E0C800471C21 /* Model */,
 			);
 			path = Account;
@@ -159,6 +168,22 @@
 				FE3E33392616E0E200471C21 /* Account.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FE3E33412616F3B400471C21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E33422616F3F700471C21 /* AccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FE3E334C2616F5E800471C21 /* JSONData */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E334D2616F60B00471C21 /* accounts.json */,
+			);
+			path = JSONData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3E32FD2616DC8700471C21 /* LaunchScreen.storyboard in Resources */,
+				FE3E334E2616F60B00471C21 /* accounts.json in Resources */,
 				FE3E32FA2616DC8700471C21 /* Assets.xcassets in Resources */,
 				FE3E32F82616DC5B00471C21 /* Main.storyboard in Resources */,
 			);
@@ -295,6 +321,7 @@
 				FE3E32F52616DC5B00471C21 /* ViewController.swift in Sources */,
 				FE3E32F12616DC5B00471C21 /* AppDelegate.swift in Sources */,
 				FE3E32F32616DC5B00471C21 /* SceneDelegate.swift in Sources */,
+				FE3E33432616F3F700471C21 /* AccountViewModel.swift in Sources */,
 				FE3E33252616DD9100471C21 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3E33482616F46600471C21 /* TestAccountViewModel.swift in Sources */,
 				FE3E33082616DC8900471C21 /* TestBankingTests.swift in Sources */,
 				FE3E33302616DEAD00471C21 /* TestAccounts.swift in Sources */,
 			);

@@ -1,0 +1,23 @@
+{
+  "accounts" : [
+    {
+
+        "id": "098765",
+        "currentBalance" : "25238.24",
+        "availableBalance" : "8238.70",
+        "productName" : "Saving"
+    },
+    {
+        "id": "12345",
+        "currentBalance" : "500.01",
+        "availableBalance" : "500.01",
+        "productName" : "Spending"
+    },
+    {
+        "id": "135790",
+        "currentBalance" : "-469.01",
+        "availableBalance" : "1500.00",
+        "productName" : "Spending"
+    }
+  ]
+}
