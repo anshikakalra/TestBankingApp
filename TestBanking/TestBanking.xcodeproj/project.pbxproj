@@ -24,6 +24,7 @@
 		FE3E335E2616FE9F00471C21 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E335D2616FE9F00471C21 /* AccountTableViewCell.swift */; };
 		FE3E336B26170E3000471C21 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E336A26170E3000471C21 /* Transaction.swift */; };
 		FE3E337726170E7D00471C21 /* transactions_098765.json in Resources */ = {isa = PBXBuildFile; fileRef = FE3E337626170E7D00471C21 /* transactions_098765.json */; };
+		FE3E337C2617103200471C21 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E337B2617103200471C21 /* TransactionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		FE3E335D2616FE9F00471C21 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		FE3E336A26170E3000471C21 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		FE3E337626170E7D00471C21 /* transactions_098765.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transactions_098765.json; sourceTree = "<group>"; };
+		FE3E337B2617103200471C21 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 		FE3E337226170E3900471C21 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FE3E337B2617103200471C21 /* TransactionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			files = (
 				FE3E333A2616E0E200471C21 /* Account.swift in Sources */,
 				FE3E32F52616DC5B00471C21 /* AccountsViewController.swift in Sources */,
+				FE3E337C2617103200471C21 /* TransactionViewModel.swift in Sources */,
 				FE3E336B26170E3000471C21 /* Transaction.swift in Sources */,
 				FE3E32F12616DC5B00471C21 /* AppDelegate.swift in Sources */,
 				FE3E32F32616DC5B00471C21 /* SceneDelegate.swift in Sources */,

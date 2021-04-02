@@ -36,11 +36,11 @@ enum ProcessingStatus {
     }
 }
 
-struct Transactions {
+struct Transactions: Decodable {
     var transactions: [Transaction]
 }
 
-struct Transaction {
+struct Transaction: Decodable {
     let date: String
     let description: String
     let amount: Double
