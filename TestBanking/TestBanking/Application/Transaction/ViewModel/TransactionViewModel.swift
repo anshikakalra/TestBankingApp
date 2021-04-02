@@ -43,7 +43,7 @@ class TransactionViewModel {
     func formatTransactionData(forTransaction transaction: Transaction) -> (date: String,
                                                             description: String,
                                                             amount: String,
-                                                            runningBlanace: String,
+                                                            runningBalance: String,
                                                             processingStatus: String) {
         return ("\(transaction.date)",
                 "\(transaction.processingStatus.description())",

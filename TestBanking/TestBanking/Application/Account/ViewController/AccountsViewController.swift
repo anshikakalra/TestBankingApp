@@ -38,7 +38,16 @@ extension AccountsViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let accountViewModel = accountViewModel else {
+            return
+        }
+        let account = accountViewModel.accounts[indexPath.row]
+        let transactionViewController = TransactionViewController()
+        transactionViewController.account = account
+        self.performSegue(withIdentifier: SegueIdentitifiers.accountToTransactionSegue.rawValue, sender: nil)
+        
+    }
 }
 
 //MARK: accountDelegate methods

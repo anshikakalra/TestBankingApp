@@ -25,6 +25,8 @@
 		FE3E336B26170E3000471C21 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E336A26170E3000471C21 /* Transaction.swift */; };
 		FE3E337726170E7D00471C21 /* transactions_098765.json in Resources */ = {isa = PBXBuildFile; fileRef = FE3E337626170E7D00471C21 /* transactions_098765.json */; };
 		FE3E337C2617103200471C21 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E337B2617103200471C21 /* TransactionViewModel.swift */; };
+		FE3E33842617132000471C21 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33832617131F00471C21 /* TransactionTableViewCell.swift */; };
+		FE3E3389261714B000471C21 /* TransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E3388261714B000471C21 /* TransactionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		FE3E336A26170E3000471C21 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		FE3E337626170E7D00471C21 /* transactions_098765.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transactions_098765.json; sourceTree = "<group>"; };
 		FE3E337B2617103200471C21 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		FE3E33832617131F00471C21 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransactionTableViewCell.swift; path = TestBanking/Application/Transaction/View/TransactionTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		FE3E3388261714B000471C21 /* TransactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +247,7 @@
 		FE3E337326170E4100471C21 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FE3E3388261714B000471C21 /* TransactionTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 		FE3E337426170E4B00471C21 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE3E33832617131F00471C21 /* TransactionTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -400,7 +406,9 @@
 				FE3E336B26170E3000471C21 /* Transaction.swift in Sources */,
 				FE3E32F12616DC5B00471C21 /* AppDelegate.swift in Sources */,
 				FE3E32F32616DC5B00471C21 /* SceneDelegate.swift in Sources */,
+				FE3E33842617132000471C21 /* TransactionTableViewCell.swift in Sources */,
 				FE3E335E2616FE9F00471C21 /* AccountTableViewCell.swift in Sources */,
+				FE3E3389261714B000471C21 /* TransactionTableViewController.swift in Sources */,
 				FE3E33432616F3F700471C21 /* AccountViewModel.swift in Sources */,
 				FE3E33252616DD9100471C21 /* Constants.swift in Sources */,
 			);

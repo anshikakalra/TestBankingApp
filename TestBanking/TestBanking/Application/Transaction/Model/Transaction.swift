@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ProcessingStatus {
+enum ProcessingStatus: Decodable {
     case posted
     case pending
     case unKnown(value: String)

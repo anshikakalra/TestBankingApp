@@ -9,4 +9,9 @@ import Foundation
 
 enum CellIdentifiers: String {
     case accountCell = "AccountCell"
+    case transactionCell = "transactionCell"
+}
+
+enum SegueIdentitifiers: String {
+    case accountToTransactionSegue = "AccountTransactionSegue"
 }
