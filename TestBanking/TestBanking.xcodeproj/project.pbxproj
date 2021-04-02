@@ -15,6 +15,7 @@
 		FE3E32FD2616DC8700471C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3E32FB2616DC8700471C21 /* LaunchScreen.storyboard */; };
 		FE3E33082616DC8900471C21 /* TestBankingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33072616DC8900471C21 /* TestBankingTests.swift */; };
 		FE3E33132616DC8900471C21 /* TestBankingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33122616DC8900471C21 /* TestBankingUITests.swift */; };
+		FE3E33252616DD9100471C21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E33242616DD9100471C21 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FE3E330E2616DC8900471C21 /* TestBankingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBankingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3E33122616DC8900471C21 /* TestBankingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBankingUITests.swift; sourceTree = "<group>"; };
 		FE3E33142616DC8900471C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE3E33242616DD9100471C21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,9 @@
 		FE3E32EF2616DC5B00471C21 /* TestBanking */ = {
 			isa = PBXGroup;
 			children = (
-				FE3E32F02616DC5B00471C21 /* AppDelegate.swift */,
-				FE3E32F22616DC5B00471C21 /* SceneDelegate.swift */,
+				FE3E33232616DD6500471C21 /* Application */,
 				FE3E32F42616DC5B00471C21 /* ViewController.swift */,
-				FE3E32F62616DC5B00471C21 /* Main.storyboard */,
 				FE3E32F92616DC8700471C21 /* Assets.xcassets */,
-				FE3E32FB2616DC8700471C21 /* LaunchScreen.storyboard */,
 				FE3E32FE2616DC8700471C21 /* Info.plist */,
 			);
 			path = TestBanking;
@@ -126,6 +125,18 @@
 				FE3E33142616DC8900471C21 /* Info.plist */,
 			);
 			path = TestBankingUITests;
+			sourceTree = "<group>";
+		};
+		FE3E33232616DD6500471C21 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E32FB2616DC8700471C21 /* LaunchScreen.storyboard */,
+				FE3E32F62616DC5B00471C21 /* Main.storyboard */,
+				FE3E32F22616DC5B00471C21 /* SceneDelegate.swift */,
+				FE3E32F02616DC5B00471C21 /* AppDelegate.swift */,
+				FE3E33242616DD9100471C21 /* Constants.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				FE3E32F52616DC5B00471C21 /* ViewController.swift in Sources */,
 				FE3E32F12616DC5B00471C21 /* AppDelegate.swift in Sources */,
 				FE3E32F32616DC5B00471C21 /* SceneDelegate.swift in Sources */,
+				FE3E33252616DD9100471C21 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
