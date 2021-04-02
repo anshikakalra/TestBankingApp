@@ -41,7 +41,7 @@ class TestAccounts: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testInit_Id_CurrentBalance_AvailableBalance_ProductName_Instantiated () {
+    func testInit_Id_CurrentBalance_AvailableBalance_ProductName_Instantiated() {
         let account = Account(id: 098765, currentBalance: 25238.24, availableBalance: 8238.70, productName: ProductName.Saving)
         XCTAssertNotNil(account)
         XCTAssertNotNil(account.id)
@@ -51,6 +51,17 @@ class TestAccounts: XCTestCase {
         XCTAssertNotNil(account.availableBalance)
         XCTAssertEqual(account.availableBalance, 8238.70)
         XCTAssertNotNil(account.productName)
+        XCTAssertEqual(account.productName, ProductName.Saving)
+        
+    }
+    
+    func testInitFromDecoder() {
+        let jsonDecoder = JSONDecoder()
+        let accountData = getAccountAsData()
+        let account = jsonDecoder.decode(Account.self, from: accountData)
+        XCTAssertEqual(account.id, 098765)
+        XCTAssertEqual(account.currentBalance, 25238.24)
+        XCTAssertEqual(account.availableBalance, 8238.70)
         XCTAssertEqual(account.productName, ProductName.Saving)
         
     }
@@ -67,4 +78,21 @@ class TestAccounts: XCTestCase {
         }
     }
 
+}
+
+//MARK: Helper functions
+extension TestAccounts {
+    func getAccountAsData() -> Data {
+        let json = """
+{
+        
+        "id": "098765",
+        "currentBalance" : "25238.24",
+        "availableBalance" : "8238.70",
+        "productName" : "Saving"
+    }
+"""
+        let data = json.data(using: .utf8)
+        return data ?? Data()
+    }
 }
