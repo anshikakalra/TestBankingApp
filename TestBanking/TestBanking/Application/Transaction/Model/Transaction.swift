@@ -43,7 +43,7 @@ struct Transactions: Decodable {
 struct Transaction: Decodable {
     let date: String
     let description: String
-    let amount: Double
-    let runningBalance: Double
+    let amount: String
+    let runningBalance: String?
     let processingStatus: ProcessingStatus
 }

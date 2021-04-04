@@ -41,8 +41,8 @@ struct Accounts: Decodable {
 }
 
 struct Account:Decodable {
-    let id: Int
-    var currentBalance: Double
-    var availableBalance: Double
+    let id: String
+    var currentBalance: String
+    var availableBalance: String
     let productName: ProductName
 }

@@ -21,17 +21,18 @@ class TransactionViewModel {
     //MARK: Initializers
     init(transactionDelegate: TransactionDelegate, account: Account) {
         self.transactionDelegate = transactionDelegate
-        self.transactions = []
         self.account = account
-        _ = loadTransactions(forAccount: account)
+        self.transactions = []
+        _ = loadTransactions(filename: "transactions_\(account.id)")
     }
     
     //MARK: API calls
-    func loadTransactions(filename fileName: String = "transactions_098765", forAccount account: Account) -> [Account] {
+    func loadTransactions(filename fileName: String = "transactions") -> [Transaction] {
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
-                self.transactions = try JSONDecoder().decode([Transaction].self, from: data)
+                self.transactions = try JSONDecoder().decode(Transactions.self, from: data).transactions.sorted(by: { $0.date > $1.date
+                })
                 self.transactionDelegate?.transactionsSet()
             } catch {
                 print("Error!! Unable to parse  \(fileName).json")
@@ -47,7 +48,7 @@ class TransactionViewModel {
                                                             processingStatus: String) {
         return ("\(transaction.date)",
                 "\(transaction.processingStatus.description())",
-                "\(transaction.runningBalance)",
+                "\(transaction.runningBalance ?? "")",
                 "\(transaction.amount)",
                 "\(transaction.description)")
     }
