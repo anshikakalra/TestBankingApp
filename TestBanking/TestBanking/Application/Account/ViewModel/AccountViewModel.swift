@@ -26,10 +26,11 @@ class AccountViewModel {
     
     //MARK: API calls
     func loadAccounts(filename fileName: String = "accounts") -> [Account] {
+
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
-                self.accounts = try JSONDecoder().decode([Account].self, from: data)
+                self.accounts =  try JSONDecoder().decode(Accounts.self, from: data).accounts
                 self.accountDelegate?.accountsSet()
             } catch {
                 print("Error!! Unable to parse  \(fileName).json")

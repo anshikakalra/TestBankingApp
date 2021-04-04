@@ -39,20 +39,21 @@ extension AccountsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let accountViewModel = accountViewModel else {
-            return
-        }
-        let account = accountViewModel.accounts[indexPath.row]
-        let transactionViewController = TransactionViewController()
-        transactionViewController.account = account
         self.performSegue(withIdentifier: SegueIdentitifiers.accountToTransactionSegue.rawValue, sender: nil)
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexpath = self.tableView.indexPathForSelectedRow?.row else { return  }
+        let account = accountViewModel?.accounts[indexpath]
+        let transactionViewController = segue.destination as? TransactionViewController
+        transactionViewController?.account = account
     }
 }
 
 //MARK: accountDelegate methods
 extension AccountsViewController: AccountDelegate {
     func accountsSet() {
+        print("Account data loaded")
         tableView.reloadData()
     }
 }
