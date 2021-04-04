@@ -27,9 +27,9 @@ enum ProcessingStatus: Decodable {
     func description() -> String{
         switch self {
         case .posted:
-            return "Saving"
+            return "Posted"
         case .pending:
-            return "Spending"
+            return "Pending"
         default:
             return "Unknown"
         }

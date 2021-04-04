@@ -31,7 +31,9 @@ class TransactionViewModel {
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
-                self.transactions = try JSONDecoder().decode(Transactions.self, from: data).transactions.sorted(by: { $0.date > $1.date
+                let jsonDecoder = JSONDecoder()
+                jsonDecoder.dateDecodingStrategy = .iso8601
+                self.transactions = try jsonDecoder.decode(Transactions.self, from: data).transactions.sorted(by: { $0.date > $1.date
                 })
                 self.transactionDelegate?.transactionsSet()
             } catch {
@@ -46,11 +48,16 @@ class TransactionViewModel {
                                                             amount: String,
                                                             runningBalance: String,
                                                             processingStatus: String) {
-        return ("\(transaction.date)",
-                "\(transaction.processingStatus.description())",
+        let capitalizedStatus = transaction.processingStatus.description().capitalizingFirstLetter()
+        let floatAmount = transaction.amount.convertStringToFloat() ?? 0
+        let formattedDate = transaction.date.serializeDateFromServer()
+        let prefix = floatAmount < 0 ? "Dr" : "Cr"
+        let prefixedAmount = prefix + " \(abs(floatAmount))"
+        return ("\(formattedDate)",
+                "\(transaction.description)",
+                "\(prefixedAmount)",
                 "\(transaction.runningBalance ?? "")",
-                "\(transaction.amount)",
-                "\(transaction.description)")
+                "\(capitalizedStatus)")
     }
 }
 

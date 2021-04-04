@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FE234A502619DDFC00A82130 /* transactions_12345.json in Resources */ = {isa = PBXBuildFile; fileRef = FE234A4F2619DDFC00A82130 /* transactions_12345.json */; };
 		FE234A552619DE0A00A82130 /* transactions_135790.json in Resources */ = {isa = PBXBuildFile; fileRef = FE234A542619DE0A00A82130 /* transactions_135790.json */; };
+		FE234A5B2619FB3A00A82130 /* String+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE234A5A2619FB3A00A82130 /* String+Additions.swift */; };
 		FE3E32F12616DC5B00471C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E32F02616DC5B00471C21 /* AppDelegate.swift */; };
 		FE3E32F32616DC5B00471C21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E32F22616DC5B00471C21 /* SceneDelegate.swift */; };
 		FE3E32F52616DC5B00471C21 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E32F42616DC5B00471C21 /* AccountsViewController.swift */; };
@@ -53,6 +54,7 @@
 		FE234A2B2619A35800A82130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE234A4F2619DDFC00A82130 /* transactions_12345.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transactions_12345.json; sourceTree = "<group>"; };
 		FE234A542619DE0A00A82130 /* transactions_135790.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transactions_135790.json; sourceTree = "<group>"; };
+		FE234A5A2619FB3A00A82130 /* String+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Additions.swift"; sourceTree = "<group>"; };
 		FE3E32ED2616DC5B00471C21 /* TestBanking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBanking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3E32F02616DC5B00471C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE3E32F22616DC5B00471C21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE234A592619FB1300A82130 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FE234A5A2619FB3A00A82130 /* String+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FE3E32E42616DC5B00471C21 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +167,7 @@
 		FE3E33232616DD6500471C21 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				FE234A592619FB1300A82130 /* Extensions */,
 				FE3E336826170E0300471C21 /* Transaction */,
 				FE3E33372616E05C00471C21 /* Account */,
 				FE3E32FB2616DC8700471C21 /* LaunchScreen.storyboard */,
@@ -410,6 +421,7 @@
 			files = (
 				FE3E333A2616E0E200471C21 /* Account.swift in Sources */,
 				FE3E32F52616DC5B00471C21 /* AccountsViewController.swift in Sources */,
+				FE234A5B2619FB3A00A82130 /* String+Additions.swift in Sources */,
 				FE3E337C2617103200471C21 /* TransactionViewModel.swift in Sources */,
 				FE3E336B26170E3000471C21 /* Transaction.swift in Sources */,
 				FE3E32F12616DC5B00471C21 /* AppDelegate.swift in Sources */,

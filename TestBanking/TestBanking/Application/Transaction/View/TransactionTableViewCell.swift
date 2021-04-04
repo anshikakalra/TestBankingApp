@@ -14,7 +14,6 @@ class TransactionTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var processingStatusLabel: UILabel!
-    @IBOutlet weak var runningBalanceLabel: UILabel!
     
     //MARK: view life cycle methods
     override func awakeFromNib() {
@@ -36,7 +35,6 @@ class TransactionTableViewCell: UITableViewCell {
                                  processingStatus: String)) {
         dateLabel.text = transaction.date
         processingStatusLabel.text = transaction.processingStatus
-        runningBalanceLabel.text = transaction.runningBalance
         amountLabel.text = transaction.amount
         descriptionLabel.text = transaction.description
     }
